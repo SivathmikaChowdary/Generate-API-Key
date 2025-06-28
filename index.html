@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>OMDb API Key Generator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f7fa;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      background-color: #2b2b2b;
+      padding: 15px;
+      color: white;
+      font-size: 20px;
+    }
+
+    .top-bar {
+      background-color: #f90;
+      color: white;
+      padding: 10px;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: flex-end;
+      background-color: #2b2b2b;
+      padding: 10px;
+      gap: 10px;
+    }
+
+    .nav button {
+      padding: 8px 12px;
+      border: none;
+      border-radius: 4px;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .nav .patron {
+      background-color: #e74c3c;
+    }
+
+    .nav .donate {
+      background-color: #27ae60;
+    }
+
+    .nav .contact {
+      background-color: #34495e;
+    }
+
+    .container {
+      max-width: 600px;
+      background: white;
+      margin: 40px auto;
+      padding: 20px 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      margin-top: 0;
+      font-size: 22px;
+      color: #333;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    input[type="radio"] {
+      margin-right: 8px;
+    }
+
+    input[type="email"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button.submit-btn {
+      padding: 10px 20px;
+      background-color: #3498db;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 13px;
+      color: #777;
+      margin-top: 40px;
+    }
+
+    .footer a {
+      color: #3498db;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">OMDb API</div>
+
+  <div class="top-bar">
+    Email Delays! Mainly with Yahoo and Microsoft accounts (Hotmail, Outlook, Live). If your requested key doesn't show up within an hour, please contact me directly.
+  </div>
+
+  <div class="nav">
+    <button class="patron">Become a Patron</button>
+    <button class="donate">Donate</button>
+    <button class="contact">Contact</button>
+  </div>
+
+  <div class="container">
+    <h2>Generate API Key</h2>
+
+    <form>
+      <label>Account Type</label>
+      <label><input type="radio" name="account" checked> Patreon</label>
+      <label><input type="radio" name="account"> FREE! (1,000 daily limit)</label>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Enter the email address that you used with Patreon.">
+
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+  </div>
+
+  <div class="footer">
+    API by <a href="#">Brian Fritz</a>. All content licensed under <a href="#">CC BY-NC 4.0</a>.<br>
+    This site is not endorsed by or affiliated with <a href="#">IMDb.com</a>.
+  </div>
+
+</body>
+</html>
